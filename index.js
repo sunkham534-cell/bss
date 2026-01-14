@@ -5347,11 +5347,15 @@ function BeeSwarmSimulator(DATA){
             amount:document.getElementById('blueExtractBuff_amount'),
             maxCooldown:10*60,
             maxAmount:1,
-            tokenLife:4,
+            tokenLife:400,
             
             update:(amount,player)=>{
                 
-                player.bluePollen*=1.25
+                player.capacity*=8
+                player.redPollen*=8
+                player.bluePollen*=8
+                player.pollenFromTools*=8
+                player.pollenFromBees*=8
             },
             
             getMessage:(amount)=>{
