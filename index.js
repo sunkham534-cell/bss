@@ -5345,7 +5345,7 @@ function BeeSwarmSimulator(DATA){
             svg:document.getElementById('blueExtractBuff'),
             cooldown:document.getElementById('blueExtractBuff_cooldown'),
             amount:document.getElementById('blueExtractBuff_amount'),
-            maxCooldown:10*60,
+            maxCooldown:10000*60,
             maxAmount:1,
             tokenLife:400,
             
